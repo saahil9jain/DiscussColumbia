@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DiscussBoard</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+  <div class="left-nav">
+    <ul>
+      <li><%= link_to "Home", posts_path %></li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li><%= link_to "Add Post", new_post_path %></li>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+</header>
+
+<%= yield %>
+
+</body>
+</html>

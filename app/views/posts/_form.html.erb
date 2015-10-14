@@ -1,0 +1,17 @@
+<%= form_for @post do |f| %>
+  <div>
+    <%= f.label :question %>
+    <%= f.text_field :question %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description, size: '60x6' %>
+  </div>
+  <div>
+    <%= f.label :tag %>
+    <%= f.text_field :tag %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
