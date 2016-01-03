@@ -1,3 +1,5 @@
-This project is a question and answer platform geared towards the Columbia community.
-
-To run, run rails s within repository.
+-== README
+ -
+ -This is a question and answer platform built on Rails for Columbia students and faculty.
+ -
+ -To run, run rails s within repository.
