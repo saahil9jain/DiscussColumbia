@@ -1,9 +1,20 @@
-<h1> Posts </h1>
+<h1> Qumbia </h1>
 
 <% @posts.each do |post| %>
-  <h3><%= post.question %></h3>
-  <p><%= post.description %></p>
-  <p><%= post.tag %></p>
+  <h3>
+  	Question: <%= post.question %></h3>
+  <p>
+  	Description: <%= post.description %></p>
+  <p>
+  	Tag: <%= post.tag %>
+  </p>
   <h5><%= link_to "Edit Posting", edit_post_path(post)%></h5>
+  <h5><%= link_to 'Delete Posting', post, method: :delete %></h5>
+
+  <h3>
+  	Answers: 
+  </h3>
+
+
 
 <% end %>

@@ -22,6 +22,18 @@ class PostsController < ApplicationController
   		redirect_to posts_path
 	end
 
+	def respond
+        @topic = Topic.find(params[:id])
+        @topic.votes.create
+        redirect_to(topics_path)
+    end
+
+	def destroy
+		@post = Post.find(params[:id])
+		@post.destroy
+		redirect_to posts_path
+	end
+
 	private
 
 	def post_params
