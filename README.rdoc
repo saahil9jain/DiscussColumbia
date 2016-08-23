@@ -1,5 +1,5 @@
 == README
 
-This is a question and answer site built on Rails for the Columbia community.
+A basic question and answer site for the Columbia community implemented with Ruby on Rails. This project is the first iteration of the next project, Ask Alma, which includes 5 additional team members.
 
-To run locally, run rails s within project directory.
+Contributors: Saahil Jain
